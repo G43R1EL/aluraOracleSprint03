@@ -162,6 +162,16 @@ main {
     main #about img {
       margin: 1rem 0;
       width: 8.75rem; }
+    main #about ul {
+      display: flex; }
+      main #about ul li {
+        list-style: none;
+        margin-right: 2rem;
+        margin-bottom: 1rem; }
+        main #about ul li:last-child {
+          margin-right: 0; }
+        main #about ul li a {
+          text-decoration: none; }
   main #formation {
     background-color: var(--celeste__color); }
   main #experience .portfolio__proyectCard {

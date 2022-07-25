@@ -106,6 +106,20 @@ main {
             margin: 1rem 0;
             width: 8.75rem;
         }
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                margin-right: 2rem;
+                margin-bottom: 1rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
     }
     
     #formation {
