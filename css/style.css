@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+:root {
+  --blanco__color: #FFFFFF;
+  --light__color: #F5F5F5;
+  --gris__color: #C8C8C8;
+  --preto__color: #464646;
+  --celeste__color: #EAF2FD;
+  --azul__color: #2A7AE4; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: var(--preto__color); }
+
+body {
+  background-color: var(--light__color); }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem; }
+  header nav {
+    display: none; }
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 1rem 2rem; } }
+  @media screen and (min-width: 1440px) {
+    header {
+      padding: 1rem 9.5rem;
+      position: fixed;
+      width: 100%;
+      background-color: var(--light__color); }
+      header nav {
+        display: block; }
+        header nav ul {
+          display: flex; }
+          header nav ul li {
+            list-style: none;
+            margin-right: 2rem; }
+            header nav ul li a {
+              text-decoration: none;
+              transition: all .3s ease-in-out; }
+              header nav ul li a:hover {
+                text-shadow: 0 0 1px var(--preto__color); } }
+  header div.header__leftcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    header div.header__leftcontainer h1.header__name {
+      font-size: 1rem;
+      font-weight: 700; }
+    header div.header__leftcontainer img.header__logo {
+      width: 2rem;
+      margin-right: .25rem; }
+  header div.header__rightcontainer {
+    display: flex;
+    align-items: center; }
+    header div.header__rightcontainer a.header__email {
+      font-size: 0.75rem;
+      text-decoration: none; }
+      @media screen and (min-width: 768px) {
+        header div.header__rightcontainer a.header__email {
+          font-size: 1rem;
+          font-weight: 700; } }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blanco__color);
+  padding: 2rem;
+  text-align: center; }
+
+main {
+  display: flex;
+  flex-direction: column; }
+  main section {
+    padding: 1rem; }
+    @media screen and (min-width: 768px) {
+      main section {
+        padding: 2rem; } }
+    @media screen and (min-width: 1440px) {
+      main section {
+        padding: 4rem 9.5rem; } }
+    main section h2 {
+      text-align: center;
+      font-size: 1.375rem;
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 1440px) {
+        main section h2 {
+          font-size: 2rem; } }
+    main section p {
+      font-size: 0.875rem;
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 1440px) {
+        main section p {
+          font-size: 1rem; } }
+  main #introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    @media screen and (min-width: 768px) {
+      main #introduction {
+        flex-direction: row-reverse;
+        align-items: center; }
+        main #introduction p {
+          font-size: 16px; } }
+    @media screen and (min-width: 1440px) {
+      main #introduction .portfolio__title {
+        font-size: 3.25rem; }
+      main #introduction p {
+        font-size: 1.375rem; } }
+    main #introduction div.portfolio__introContainer {
+      flex-basis: 70%; }
+      main #introduction div.portfolio__introContainer h2 {
+        text-align: left; }
+      main #introduction div.portfolio__introContainer nav ul {
+        display: flex; }
+        main #introduction div.portfolio__introContainer nav ul li {
+          list-style: none;
+          margin-right: .75rem;
+          font-size: 0.875rem;
+          font-weight: 600; }
+          @media screen and (min-width: 768px) {
+            main #introduction div.portfolio__introContainer nav ul li {
+              font-size: 1rem;
+              margin-right: 2rem; } }
+          main #introduction div.portfolio__introContainer nav ul li a {
+            text-decoration: none; }
+        main #introduction div.portfolio__introContainer nav ul li:last-child {
+          margin-right: 0; }
+    main #introduction div.portfolio__photoContainer {
+      width: 6rem;
+      height: 6rem;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 1rem; }
+      main #introduction div.portfolio__photoContainer img {
+        transition: all 1s ease-in-out; }
+        main #introduction div.portfolio__photoContainer img:hover {
+          filter: grayscale(100); }
+      @media screen and (min-width: 768px) {
+        main #introduction div.portfolio__photoContainer {
+          width: 9.125rem;
+          height: 9.125rem; } }
+      @media screen and (min-width: 1440px) {
+        main #introduction div.portfolio__photoContainer {
+          width: 23rem;
+          height: 23rem; } }
+      main #introduction div.portfolio__photoContainer img.portfolio__photo {
+        width: 100%;
+        object-fit: contain; }
+  main #about {
+    background-color: var(--celeste__color); }
+    main #about h2 {
+      text-align: left; }
+    main #about img {
+      margin: 1rem 0;
+      width: 8.75rem; }
+  main #formation {
+    background-color: var(--celeste__color); }
+  main #experience .portfolio__proyectCard {
+    display: flex;
+    flex-direction: column; }
+    main #experience .portfolio__proyectCard h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 1rem 0 .5rem 0; }
+    main #experience .portfolio__proyectCard p {
+      font-size: 0.875rem; }
+    main #experience .portfolio__proyectCard .portfolio__proyectImage {
+      height: 9rem; }
+      @media screen and (min-width: 768px) {
+        main #experience .portfolio__proyectCard .portfolio__proyectImage {
+          height: 20rem; } }
+      main #experience .portfolio__proyectCard .portfolio__proyectImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    main #experience .portfolio__proyectCard .portfolio__proyectActions {
+      margin-top: 1rem;
+      margin-bottom: 3rem; }
+    @media screen and (min-width: 1440px) {
+      main #experience .portfolio__proyectCard {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around; }
+        main #experience .portfolio__proyectCard h3 {
+          font-size: 1.375rem; }
+        main #experience .portfolio__proyectCard .portfolio__proyectImage {
+          flex-basis: 80%;
+          height: unset;
+          margin-bottom: 4rem; }
+        main #experience .portfolio__proyectCard.reverse {
+          flex-direction: row-reverse; } }
+  main #contact {
+    background-color: var(--celeste__color);
+    display: flex; }
+    main #contact .portfolio__contactImage {
+      display: none; }
+    main #contact form {
+      padding: 1rem;
+      width: 100%; }
+      main #contact form h2 {
+        text-align: left; }
+      main #contact form p {
+        margin-bottom: .5rem; }
+      main #contact form fieldset {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: none; }
+        main #contact form fieldset label {
+          margin-top: 1rem;
+          font-size: 0.75rem;
+          padding: .5rem;
+          background-color: var(--blanco__color); }
+        main #contact form fieldset input {
+          margin-bottom: 1rem;
+          border: none;
+          outline: none;
+          padding: .5rem;
+          font-size: 0.875rem;
+          border-bottom: 1px solid var(--gris__color); }
+          main #contact form fieldset input:focus {
+            outline: none;
+            border-bottom: 1px solid var(--azul__color); }
+          main #contact form fieldset input:-webkit-autofill, main #contact form fieldset input:-webkit-autofill:hover, main #contact form fieldset input:-webkit-autofill:focus, main #contact form fieldset input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px white inset !important; }
+        main #contact form fieldset textarea {
+          margin-bottom: 1rem;
+          border: none;
+          outline: none;
+          padding: .5rem;
+          border-bottom: 1px solid var(--gris__color); }
+          main #contact form fieldset textarea:focus {
+            outline: none;
+            border-bottom: 1px solid var(--azul__color); }
+    @media screen and (min-width: 1440px) {
+      main #contact .portfolio__contactImage {
+        margin: 1rem 0;
+        flex-basis: 30%;
+        display: block;
+        height: 691px; }
+        main #contact .portfolio__contactImage img {
+          height: 100%;
+          object-fit: contain; }
+      main #contact form {
+        flex-basis: 70%; } }
+  main .btn__primary {
+    background-color: var(--azul__color);
+    border: 1px solid var(--azul__color) !important;
+    color: var(--blanco__color);
+    font-weight: 600;
+    margin-top: 1rem;
+    width: min-content;
+    padding: .875rem 1rem !important;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out; }
+    main .btn__primary:hover {
+      background-color: var(--light__color);
+      color: var(--azul__color); }
+  main .btn__secondary {
+    background-color: none;
+    border: 1px solid var(--azul__color) !important;
+    color: var(--azul__color);
+    font-weight: 600;
+    margin-top: 1rem;
+    width: min-content;
+    padding: .875rem 1rem !important;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out; }
+    main .btn__secondary:hover {
+      background-color: var(--azul__color);
+      color: var(--blanco__color); }
+  main .portfolio__cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; }
+    @media screen and (min-width: 768px) {
+      main .portfolio__cardContainer {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media screen and (min-width: 1440px) {
+      main .portfolio__cardContainer {
+        grid-template-columns: repeat(6, 1fr); } }
+    main .portfolio__cardContainer .portfolio__card {
+      background: var(--blanco__color);
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      padding: 1rem;
+      height: 7.375rem;
+      transition: all .3s ease-in-out; }
+      main .portfolio__cardContainer .portfolio__card:hover {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); }
+      @media screen and (min-width: 1440px) {
+        main .portfolio__cardContainer .portfolio__card {
+          height: 11rem; } }
+      main .portfolio__cardContainer .portfolio__card i {
+        color: var(--azul__color);
+        font-size: 2rem;
+        margin: 1rem 0 .5rem 0; }
+      main .portfolio__cardContainer .portfolio__card h3 {
+        font-size: 1rem; }
+  main .portfolio__certificationContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem; }
+    @media screen and (min-width: 768px) {
+      main .portfolio__certificationContainer {
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr); } }
+    main .portfolio__certificationContainer .portfolio__certificationCard {
+      display: flex;
+      flex-direction: column; }
+      main .portfolio__certificationContainer .portfolio__certificationCard h3 {
+        font-size: 1rem;
+        margin-bottom: .25rem; }
+        @media screen and (min-width: 1440px) {
+          main .portfolio__certificationContainer .portfolio__certificationCard h3 {
+            font-size: 1.375rem; } }
+      main .portfolio__certificationContainer .portfolio__certificationCard p {
+        font-size: 0.875rem;
+        margin-bottom: 1rem; }
+        @media screen and (min-width: 1440px) {
+          main .portfolio__certificationContainer .portfolio__certificationCard p {
+            font-size: 1rem; } }
+      main .portfolio__certificationContainer .portfolio__certificationCard .portfolio__certificationImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--blanco__color);
+        height: 7.375rem;
+        margin-bottom: .5rem;
+        transition: all .3s ease-in-out; }
+        main .portfolio__certificationContainer .portfolio__certificationCard .portfolio__certificationImage:hover {
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); }
+        @media screen and (min-width: 1440px) {
+          main .portfolio__certificationContainer .portfolio__certificationCard .portfolio__certificationImage {
+            height: 17.875rem; } }
+        main .portfolio__certificationContainer .portfolio__certificationCard .portfolio__certificationImage img {
+          width: 50%;
+          height: 50%;
+          object-fit: contain; }

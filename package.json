@@ -1,0 +1,27 @@
+{
+  "name": "aluraoraclesprint03",
+  "version": "1.0.0",
+  "description": "Portfolio - Alura Latam",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G43R1EL/aluraOracleSprint03.git"
+  },
+  "keywords": [
+    "portfolio",
+    "html",
+    "css",
+    "sass"
+  ],
+  "author": "Nelson Gabriel Hernández",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G43R1EL/aluraOracleSprint03/issues"
+  },
+  "homepage": "https://github.com/G43R1EL/aluraOracleSprint03#readme"
+}

@@ -1,0 +1,29 @@
+// Colors
+$colors: (
+  "blanco": #FFFFFF,
+  "light": #F5F5F5,
+  "gris": #C8C8C8,
+  "preto": #464646,
+  "celeste": #EAF2FD,
+  "azul": #2A7AE4,
+);
+
+:root {
+  @each $color, $var in $colors {
+    --#{$color}__color: #{$var};
+  }
+}
+
+// Media Querys
+  // Desktop Media Query
+@mixin desktop {     
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+  // Tablet Media Query
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
